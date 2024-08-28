@@ -5,7 +5,7 @@ echo "========================================="
 echo "Thunderbolt Mesh Network Config Info Tool"
 echo "========================================="
 
-echo "-----------------------------------------"
+echo "\n-----------------------------------------"
 echo "File: /etc/network/interfaces"
 echo "-----------------------------------------"
 cat /etc/network/interfaces
@@ -68,3 +68,9 @@ echo "File: /etc/init.d/thunderbolt-affinity"
 ls -l /etc/init.d/thunderbolt-affinity
 echo "-----------------------------------------"
 cat /etc/init.d/thunderbolt-affinity
+
+echo "\n----------------------------------------"
+echo "File: /etc/network/if-up.d/thunderbolt-affinity"
+ls -l /etc/network/if-up.d/thunderbolt-affinity
+echo "-----------------------------------------"
+cat /etc/network/if-up.d/thunderbolt-affinity
