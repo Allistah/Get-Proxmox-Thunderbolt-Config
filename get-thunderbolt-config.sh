@@ -6,6 +6,11 @@ echo "Thunderbolt Mesh Network Config Info Tool"
 echo "========================================="
 
 echo "\n-----------------------------------------"
+echo "Kernel Version"
+echo "-----------------------------------------"
+uname -a
+
+echo "\n-----------------------------------------"
 echo "File: /etc/network/interfaces"
 echo "-----------------------------------------"
 cat /etc/network/interfaces
