@@ -63,6 +63,16 @@ echo "File: /etc/frr/daemons"
 echo "-----------------------------------------"
 cat /etc/frr/daemons
 
+echo "\n-----------------------------------------"
+echo "Command: vtysh -c \"show openfabric topology\""
+echo "-----------------------------------------"
+vtysh -c "show openfabric topology"
+
+echo "\n-----------------------------------------"
+echo "Command: vtysh -c \"show running-config\""
+echo "-----------------------------------------"
+vtysh -c "show running-config"
+
 echo "\n----------------------------------------"
 echo "File: /etc/init.d/thunderbolt-affinity"
 ls -l /etc/init.d/thunderbolt-affinity
