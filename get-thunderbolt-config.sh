@@ -79,12 +79,6 @@ echo "-----------------------------------------"
 vtysh -c "show running-config"
 
 echo "\n----------------------------------------"
-echo "File: /etc/init.d/thunderbolt-affinity"
-ls -l /etc/init.d/thunderbolt-affinity
-echo "-----------------------------------------"
-grep -v '^#' /etc/init.d/thunderbolt-affinity | grep -v '^$'
-
-echo "\n----------------------------------------"
 echo "File: /etc/network/if-up.d/thunderbolt-affinity"
 ls -l /etc/network/if-up.d/thunderbolt-affinity
 echo "-----------------------------------------"
