@@ -13,60 +13,60 @@ uname -a
 echo "\n-----------------------------------------"
 echo "File: /etc/network/interfaces"
 echo "-----------------------------------------"
-cat /etc/network/interfaces
+grep -v '^#' /etc/network/interfaces | grep -v '^$'
 
 echo "\n----------------------------------------"
 echo "File: /usr/local/bin/pve-en05.sh"
 ls -l /usr/local/bin/pve-en05.sh
 echo "-----------------------------------------"
-cat /usr/local/bin/pve-en05.sh
+grep -v '^#' /usr/local/bin/pve-en05.sh | grep -v '^$'
 
 echo "\n----------------------------------------"
 echo "File: /usr/local/bin/pve-en06.sh"
 ls -l /usr/local/bin/pve-en06.sh
 echo "-----------------------------------------"
-cat /usr/local/bin/pve-en06.sh
+grep -v '^#' /usr/local/bin/pve-en06.sh | grep -v '^$'
 
 echo "\n-----------------------------------------"
 echo "File: /etc/modules"
 echo "-----------------------------------------"
-cat /etc/modules
+grep -v '^#' /etc/modules | grep -v '^$'
 
 echo "\n-----------------------------------------"
 echo "File: /etc/systemd/network/00-thunderbolt0.link"
 echo "-----------------------------------------"
-cat /etc/systemd/network/00-thunderbolt0.link
+grep -v '^#' /etc/systemd/network/00-thunderbolt0.link | grep -v '^$'
 
 echo "\n-----------------------------------------"
 echo "File: /etc/systemd/network/00-thunderbolt1.link"
 echo "-----------------------------------------"
-cat /etc/systemd/network/00-thunderbolt1.link
+grep -v '^#' /etc/systemd/network/00-thunderbolt1.link | grep -v '^$'
 
 echo "\n-----------------------------------------"
 echo "File: /etc/sysctl.conf"
 echo "-----------------------------------------"
-cat /etc/sysctl.conf
+grep -v '^#' /etc/sysctl.conf | grep -v '^$'
 
 echo "\n----------------------------------------"
 echo "File: /etc/network/if-up.d/restart-frr"
 ls -l /etc/network/if-up.d/restart-frr
 echo "-----------------------------------------"
-cat /etc/network/if-up.d/restart-frr
+grep -v '^#' /etc/network/if-up.d/restart-frr | grep -v '^$'
 
 echo "\n-----------------------------------------"
 echo "File: /etc/udev/rules.d/10-tb-en.rules"
 echo "-----------------------------------------"
-cat /etc/udev/rules.d/10-tb-en.rules
+grep -v '^#' /etc/udev/rules.d/10-tb-en.rules | grep -v '^$'
 
 echo "\n-----------------------------------------"
 echo "File: /etc/frr/frr.conf"
 echo "-----------------------------------------"
-cat /etc/frr/frr.conf
+grep -v '^#' /etc/frr/frr.conf | grep -v '^$'
 
 echo "\n-----------------------------------------"
 echo "File: /etc/frr/daemons"
 echo "-----------------------------------------"
-cat /etc/frr/daemons
+grep -v '^#' /etc/frr/daemons | grep -v '^$'
 
 echo "\n-----------------------------------------"
 echo "Command: vtysh -c \"show openfabric topology\""
@@ -82,10 +82,10 @@ echo "\n----------------------------------------"
 echo "File: /etc/init.d/thunderbolt-affinity"
 ls -l /etc/init.d/thunderbolt-affinity
 echo "-----------------------------------------"
-cat /etc/init.d/thunderbolt-affinity
+grep -v '^#' /etc/init.d/thunderbolt-affinity | grep -v '^$'
 
 echo "\n----------------------------------------"
 echo "File: /etc/network/if-up.d/thunderbolt-affinity"
 ls -l /etc/network/if-up.d/thunderbolt-affinity
 echo "-----------------------------------------"
-cat /etc/network/if-up.d/thunderbolt-affinity
+grep -v '^#' /etc/network/if-up.d/thunderbolt-affinity | grep -v '^$'
