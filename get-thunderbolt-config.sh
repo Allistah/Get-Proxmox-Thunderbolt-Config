@@ -52,12 +52,6 @@ echo "File: /etc/sysctl.conf"
 echo "-----------------------------------------"
 grep -v '^#' /etc/sysctl.conf | grep -v '^$'
 
-echo "\n----------------------------------------"
-echo "File: /etc/network/if-up.d/restart-frr"
-ls -l /etc/network/if-up.d/restart-frr
-echo "-----------------------------------------"
-grep -v '^#' /etc/network/if-up.d/restart-frr | grep -v '^$'
-
 echo "\n-----------------------------------------"
 echo "File: /etc/udev/rules.d/10-tb-en.rules"
 echo "-----------------------------------------"
