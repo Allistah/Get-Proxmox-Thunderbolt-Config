@@ -15,6 +15,11 @@ echo "File: /etc/network/interfaces"
 echo "-----------------------------------------"
 grep -v '^#' /etc/network/interfaces | grep -v '^$'
 
+echo "\n-----------------------------------------"
+echo "File: /etc/network/interfaces.d/thunderbolt"
+echo "-----------------------------------------"
+cat /etc/network/interfaces.d/thunderbolt
+
 echo "\n----------------------------------------"
 echo "File: /usr/local/bin/pve-en05.sh"
 ls -l /usr/local/bin/pve-en05.sh
